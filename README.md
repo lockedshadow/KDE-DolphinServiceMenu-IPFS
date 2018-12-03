@@ -1,18 +1,16 @@
+**Still experimental and not intended to use yet!**
+---------
+
 # KDE-DolphinServiceMenu-IPFS
 
-Upload files on IPFS through the globalupload.io
+A context menu helper for Dolphin file manager to add files into IPFS through local IPFS node and obtain shareable link to added file.
 
-### Prerequisites
+It forked from https://github.com/amar-laksh/KDE-DolphinServiceMenu-IPFS, but rewritten in Python for reach ability to implement some advanced features. At this moment, it operates nearly the same way as original does, except using local IPFS node instead globalupload.io and some minor changes.
 
-- [curl](https://curl.haxx.se) is a command line tool and library for transferring data with url syntax
-- [coreutils](https://www.gnu.org/software/coreutils) are the basic file, shell and text manipulation utilities of the gnu operating system
-- [sed](https://www.gnu.org/software/sed) (stream editor) is a non-interactive command-line text editor
-- [xdg-utils](https://freedesktop.org/wiki/Software/xdg-utils) is a set of tools that allows applications to easily integrate with the desktop environment of the user, regardless of the specific desktop environment that the user runs
-- [xclip](https://github.com/astrand/xclip) is a Command line interface to the X11 clipboard
+### Dependencies
 
+- Python ≥3.5
+- [py-ipfs-api](https://github.com/ipfs/py-ipfs-api)
+- kdialog (part of KDE Applications)
+- Klipper
 
-### Installing
-
-1. Run `./ipfsconfig.sh install` to install the service
-
-2. Enjoy!
